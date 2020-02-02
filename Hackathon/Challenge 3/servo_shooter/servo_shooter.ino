@@ -10,7 +10,7 @@ void setup()
 void loop()
 {
   myservo.write(180);
-  delay(100);
+  delay(100);//delay()必須加！！
   for(int i = 180; i >= 0; i-=1){
     myservo.write(i);// 使用write，傳入角度，從180度轉到0度
     delay(30);
